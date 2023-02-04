@@ -19,7 +19,7 @@ window.onload = function () {
   one_color_data.forEach((item, index, array) => {
     const article = document.querySelector("article");
     const div_card = document.createElement("div");
-    div_card.className = `color_card num_${item.num}`;
+    div_card.className = `one_color_card num_${item.num}`;
     div_card.setAttribute("style", `background-color:${item.hex}`);
     article.appendChild(div_card);
 

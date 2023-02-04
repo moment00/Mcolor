@@ -14,7 +14,9 @@ window.onload = function () {
   //   console.log("数据库打开成功");
   // };
   // console.log(color_data);
-  color_data.forEach((item, index, array) => {
+
+  // 单色
+  one_color_data.forEach((item, index, array) => {
     const article = document.querySelector("article");
     const div_card = document.createElement("div");
     div_card.className = `color_card num_${item.num}`;
@@ -38,4 +40,6 @@ window.onload = function () {
     div_card.appendChild(span_hex);
     div_card.appendChild(span_rgb);
   });
+
+  // 双色
 };

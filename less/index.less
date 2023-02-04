@@ -8,6 +8,7 @@ body {
 aside {
     display: flex;
     flex-basis: 15%;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
     // width: 300px;
@@ -37,8 +38,10 @@ aside {
             }
 
             a {
-                text-decoration: none;
+                display: inline-block;
+                width: 100%;
                 color: #e26a6a;
+                text-decoration: none;
             }
         }
     }
@@ -49,7 +52,7 @@ aside {
     // display: flex;
     position: relative;
     // flex-basis: auto;
-    flex-grow: 1;
+    flex-grow: 50;
     background-color: #6ae298;
 
     article {
@@ -87,6 +90,9 @@ aside {
     }
 
     #one_color_page {
+        flex-wrap: wrap;
+        // justify-content: space-around;
+        align-content: flex-start;
         background-color: #e26a6a;
     }
 

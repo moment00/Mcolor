@@ -52,7 +52,6 @@ aside .color_page_switch li a {
   flex-wrap: wrap;
   align-content: flex-start;
   position: absolute;
-  height: 100vh;
   width: 100%;
 }
 #container article .one_color_card {
@@ -85,15 +84,12 @@ aside .color_page_switch li a {
   letter-spacing: 2px;
   text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
 }
-#container #one_color_page:target,
-#container #two_color_page:target,
-#container #three_color_page:target {
-  z-index: 1;
-}
 #container #one_color_page {
+  height: 100%;
   background-color: #e26a6a;
 }
 #container #two_color_page {
+  height: 100%;
   background-color: #b3b59c;
 }
 #container #two_color_page .two_color_card {
@@ -127,7 +123,15 @@ aside .color_page_switch li a {
 }
 #container #two_color_page .two_color_card .circle .color_name {
   margin-top: 25px;
+  letter-spacing: 0px;
 }
 #container #three_color_page {
-  background-color: #c6d7d8;
+  height: 100vh;
+  background-color: #81adba;
+}
+#container .show {
+  display: '';
+}
+#container .hidden {
+  display: none;
 }

@@ -111,4 +111,16 @@ window.onload = function () {
     circle2.appendChild(span3);
     circle2.appendChild(span4);
   });
+
+  //切换显隐
+  const article_s = document.querySelectorAll("article");
+  const li_switch = document.querySelectorAll(".color_page_switch>li");
+  for (let i = 0; i < li_switch.length; i++) {
+    li_switch[i].addEventListener("click", function () {
+      article_s.forEach((ietm) => {
+        ietm.className = "hidden";
+      });
+      article_s[i].className = "show";
+    });
+  }
 };

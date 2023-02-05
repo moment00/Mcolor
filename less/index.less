@@ -53,10 +53,19 @@ aside {
     position: relative;
     // flex-basis: auto;
     flex-grow: 50;
-    background-color: #6ae298;
+    background-color: #c2c0c0;
+
+    scrollbar-width: none;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 
     article {
         display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
         position: absolute;
         height: 100vh;
         width: 100%;
@@ -65,20 +74,39 @@ aside {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            align-items: center;
             width: 200px;
             height: 300px;
             text-align: center;
-            color: #fff;
+            color: #000000;
+            font-family: '楷体';
+
 
             ruby {
-                display: inline-block;
+
                 margin: 10px 0 0 0;
-                font-size: 25px;
-                mix-blend-mode: difference;
+                font-size: 35px;
+                color: #f0f0f0;
+                // text-shadow: 2px 1px #e3fff0;
+                text-shadow: 0 0 0px #252525, 0 0 0px #252525, 0 0 2px #252525, 0 0 2px #252525;
+
+                rt {
+                    color: #ffffff;
+                    font-size: 18px;
+                    font-weight: bolder;
+                    text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
+                    // mix-blend-mode: difference;
+                }
             }
 
             span {
-                mix-blend-mode: difference;
+                font-size: 18px;
+                font-family: 'Arial';
+                color: #fff;
+                letter-spacing: 2px;
+                // text-shadow: 1px 1px #000000;
+                text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
+                // mix-blend-mode: difference;
             }
         }
     }
@@ -90,9 +118,7 @@ aside {
     }
 
     #one_color_page {
-        flex-wrap: wrap;
         // justify-content: space-around;
-        align-content: flex-start;
         background-color: #e26a6a;
     }
 
@@ -103,31 +129,33 @@ aside {
             position: relative;
             width: 200px;
             height: 300px;
-            background-image: linear-gradient(#f09a29 50%, #b1d5df 50%);
+            // background-image: linear-gradient(#f09a29 50%, #b1d5df 50%);
 
             .circle {
                 position: absolute;
-                left: 50%;
-                transform: translate(-50%);
+                // left: 50%;
+                // transform: translate(-50%);
                 width: 130px;
                 height: 130px;
                 border-radius: 50%;
 
                 &:first-child {
-                    top: 37.5px;
-                    background: #b1d5df;
-                    box-shadow: 5px -5px 13px #ca8122,
-                        -5px 5px 13px #ffb330;
-                    color: #f09a29,
+                    top: 27.5px;
+                    left: 10px;
+                    // background: #b1d5df;
+                    // box-shadow: 5px -5px 13px #ca8122,
+                    //     -5px 5px 13px #ffb330;
+                    // color: #f09a29,
                 }
 
                 &:nth-child(2) {
-                    bottom: 37.5px;
-                    background: #f09a29;
-                    box-shadow: 5px -5px 13px #95b3bb,
-                        -5px 5px 13px #cdf7ff;
+                    bottom: 27.5px;
+                    right: 10px;
+                    // background: #f09a29;
+                    // box-shadow: 5px -5px 13px #95b3bb,
+                    //     -5px 5px 13px #cdf7ff;
 
-                    color: #b1d5df;
+                    // color: #b1d5df;
                 }
 
                 span {
@@ -136,8 +164,10 @@ aside {
                     top: 40px;
                     transform: translate(-50%);
                     font-size: 16px;
+                    letter-spacing: 1px;
                     // font-weight: bold;
-                    color: #000;
+                    color: #eeeeee;
+                    text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
                 }
 
                 .color_name {

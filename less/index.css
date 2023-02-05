@@ -40,10 +40,17 @@ aside .color_page_switch li a {
 #container {
   position: relative;
   flex-grow: 50;
-  background-color: #6ae298;
+  background-color: #c2c0c0;
+  scrollbar-width: none;
+  overflow: auto;
+}
+#container::-webkit-scrollbar {
+  width: 0;
 }
 #container article {
   display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -52,19 +59,31 @@ aside .color_page_switch li a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   width: 200px;
   height: 300px;
   text-align: center;
-  color: #fff;
+  color: #000000;
+  font-family: '楷体';
 }
 #container article .one_color_card ruby {
-  display: inline-block;
   margin: 10px 0 0 0;
-  font-size: 25px;
-  mix-blend-mode: difference;
+  font-size: 35px;
+  color: #f0f0f0;
+  text-shadow: 0 0 0px #252525, 0 0 0px #252525, 0 0 2px #252525, 0 0 2px #252525;
+}
+#container article .one_color_card ruby rt {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bolder;
+  text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
 }
 #container article .one_color_card span {
-  mix-blend-mode: difference;
+  font-size: 18px;
+  font-family: 'Arial';
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
 }
 #container #one_color_page:target,
 #container #two_color_page:target,
@@ -72,8 +91,6 @@ aside .color_page_switch li a {
   z-index: 1;
 }
 #container #one_color_page {
-  flex-wrap: wrap;
-  align-content: flex-start;
   background-color: #e26a6a;
 }
 #container #two_color_page {
@@ -83,27 +100,20 @@ aside .color_page_switch li a {
   position: relative;
   width: 200px;
   height: 300px;
-  background-image: linear-gradient(#f09a29 50%, #b1d5df 50%);
 }
 #container #two_color_page .two_color_card .circle {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
   width: 130px;
   height: 130px;
   border-radius: 50%;
 }
 #container #two_color_page .two_color_card .circle:first-child {
-  top: 37.5px;
-  background: #b1d5df;
-  box-shadow: 5px -5px 13px #ca8122, -5px 5px 13px #ffb330;
-  color: #f09a29;
+  top: 27.5px;
+  left: 10px;
 }
 #container #two_color_page .two_color_card .circle:nth-child(2) {
-  bottom: 37.5px;
-  background: #f09a29;
-  box-shadow: 5px -5px 13px #95b3bb, -5px 5px 13px #cdf7ff;
-  color: #b1d5df;
+  bottom: 27.5px;
+  right: 10px;
 }
 #container #two_color_page .two_color_card .circle span {
   position: absolute;
@@ -111,7 +121,9 @@ aside .color_page_switch li a {
   top: 40px;
   transform: translate(-50%);
   font-size: 16px;
-  color: #000;
+  letter-spacing: 1px;
+  color: #eeeeee;
+  text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
 }
 #container #two_color_page .two_color_card .circle .color_name {
   margin-top: 25px;

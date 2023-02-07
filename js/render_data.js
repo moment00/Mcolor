@@ -124,3 +124,5 @@ window.onload = function () {
     });
   }
 };
+
+// 点击选择颜色名 select方法

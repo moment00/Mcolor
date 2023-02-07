@@ -69,20 +69,20 @@ aside .color_page_switch li a {
   margin: 10px 0 0 0;
   font-size: 35px;
   color: #f0f0f0;
-  text-shadow: 0 0 0px #252525, 0 0 0px #252525, 0 0 2px #252525, 0 0 2px #252525;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
 }
 #container article .one_color_card ruby rt {
   color: #ffffff;
   font-size: 18px;
   font-weight: bolder;
-  text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
 }
 #container article .one_color_card span {
   font-size: 18px;
   font-family: 'Arial';
   color: #fff;
   letter-spacing: 2px;
-  text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 2px #000, 0 0 2px #000;
+  text-shadow: #000 1px 0 0, #000 0 1px 0, #000 -1px 0 0, #000 0 -1px 0;
 }
 #container #one_color_page {
   height: 100%;
